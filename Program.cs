@@ -21,13 +21,13 @@ namespace Cheers
             for(int i = 0; i < user_name.Length; i++) {
                 if (requires_an.IndexOf(user_name[i]) > -1) {
                     // then it's in the requires_an array
-                    Console.WriteLine(cheer_prefix + "n.. " + user_name[i]);
+                    Console.WriteLine(cheer_prefix + "n.. " + user_name[i]);  //resets the cheer_prefix var every iteration through for loop
                 } else {
                     // doesn't require an
                     Console.WriteLine(cheer_prefix + ".. " + user_name[i]);
-
                 }
             }
+            Console.WriteLine(user_name.ToUpper() + " is .. GRAND!");
         }
     }
 }
